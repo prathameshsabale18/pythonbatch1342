@@ -68,7 +68,16 @@
 
 ###4 vowel or consonant
 
-# 
+# a = input("Enter any character:").lower()
+
+# match a: 
+#     case "a" | "e" | "i" | "o" | "u":
+#         print("vowel")
+#     case _:
+#         print("consonant")
+
+
+
 
 
 ###5 ATM Menu
@@ -124,6 +133,6 @@
 
 
 
-# 10 questions on match case are given in the file matchcases.py.
+# questions on match case are given in the file matchcases.py.
 # upload and mail to github.
 
