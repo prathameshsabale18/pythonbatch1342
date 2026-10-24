@@ -120,15 +120,89 @@
 #     case _:
 #         print("Invalid choice. Please select options from(1,2,3,4 ).")
 
+
+###6 Days in a month
         
-    
+month = input("Enter month: ").capitalize()
+
+match month:
+    case "January" | "March" | "May" | "July" | "August" | "October" | "December":
+        print("31 days")
+    case "April" | "June" | "September" | "November":
+        print("30 days")
+    case "February":
+        print("28 or 29 days")
+    case _:
+        print("Invalid month")
 
 
+###7 Traffic light color
+
+color = input("Enter traffic light color: ").lower()
+
+match color:
+    case "red":
+        print("Stop")
+    case "yellow":
+        print("Get Ready")
+    case "green":
+        print("Go")
+    case _:
+        print("Invalid color")
 
 
+###8 food ordering system
+
+print("1. Pizza - Rs.200")
+print("2. Burger - Rs.100")
+print("3. Sandwich - Rs.80")
+print("4. Coffee - Rs.50")
+
+choice = int(input("Choose item: "))
+quantity = int(input("Enter quantity: "))
+
+match choice:
+    case 1:
+        print("Total bill:", 200 * quantity)
+    case 2:
+        print("Total bill:", 100 * quantity)
+    case 3:
+        print("Total bill:", 80 * quantity)
+    case 4:
+        print("Total bill:", 50 * quantity)
+    case _:
+        print("Invalid item")
 
 
+### 9 calculator for discount
 
+customer = input("Enter customer type: ").lower()
+amount = float(input("Enter purchase amount: "))
+
+match customer:
+    case "student":
+        print("Final amount:", amount - amount * 0.10)
+    case "senior":
+        print("Final amount:", amount - amount * 0.20)
+    case "regular":
+        print("Final amount:", amount)
+    case _:
+        print("Invalid customer type")
+
+
+### 10 mobilerecharge
+
+plan = int(input("Choose plan (1-3): "))
+
+match plan:
+    case 1:
+        print("Price: Rs.199, Validity: 28 days")
+    case 2:
+        print("Price: Rs.299, Validity: 56 days")
+    case 3:
+        print("Price: Rs.399, Validity: 84 days")
+    case _:
+        print("Invalid plan")
 
 
 
